@@ -21,3 +21,17 @@ button {
     padding:16px;
     border-radius: 16px;
 }
+
+img {
+    display: flex;
+    width: 500px;
+    height: 500px;
+    justify-content: center;
+    align-self: center;
+}
+
+p {
+    text-align: center;
+    font-size: 58px;
+    font-weight: bold;
+}
