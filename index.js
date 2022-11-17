@@ -1,10 +1,15 @@
+// MODULES AND GLOBALS
 require('dotenv').config()
 const express = require('express')
 const app = express()
 
+// EXPRESS SETTINGS
+app.set('views', __dirname + '/views')
 app.set('view engine', 'jsx')
 app.engine('jsx', require('express-react-views').createEngine())
+app.use(express.static('public'))
 
+// CONTROLLER AND ROUTES
 app.use('/places', require('./controllers/places'))
 
 app.get('/', function (req,res){
@@ -16,5 +21,5 @@ app.get('*', function (req,res) {
 })
 
 
-
+// LISTEN FOR CONNECTIONSHHHHH
 app.listen(process.env.PORT)
