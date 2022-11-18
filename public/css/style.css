@@ -24,14 +24,14 @@ button {
 
 img {
     display: flex;
-    width: 500px;
-    height: 500px;
+    width: 50vh; 
+    height: 30vh; 
     justify-content: center;
     align-self: center;
 }
 
 p {
     text-align: center;
-    font-size: 58px;
+    font-size: 2vh;
     font-weight: bold;
 }

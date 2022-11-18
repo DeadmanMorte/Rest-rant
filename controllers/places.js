@@ -6,13 +6,13 @@ router.get('/', function(req,res) {
         city: 'Huntington Beach',
         state: 'CA',
         cuisines: 'Vegan, Pan-Asian',
-        pic: '/images/vegan-nirvana.jpg/250/250'
+        pic: '/images/vegan-nirvana.jpg'
       }, {
         name: 'Bad BBQ',
         city: 'Artesia',
         state: 'CA',
         cuisines: 'Korean Barbeque, All You Can Eat (AYCE)',
-        pic: '/images/BAD-BBQ.jpg/250/250'
+        pic: '/images/BAD-BBQ.jpg'
       }]
       
     res.render('places/index', { places })
