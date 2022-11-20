@@ -1,7 +1,8 @@
 const router = require('express').Router()
 
 router.post('/', (req, res) => {
-  res.send('bing chilling')
+  console.log(req.body)
+  res.send(' POST /places or bing chilling')
 })
 
 router.get('/new', (req, res) => {
