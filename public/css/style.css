@@ -35,3 +35,7 @@ p {
     font-size: 2vh;
     font-weight: bold;
 }
+
+.form-group {
+    margin:5px;
+}
