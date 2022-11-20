@@ -1,8 +1,20 @@
 const router = require('express').Router()
+const places = require('../models/places.js')
 
 router.post('/', (req, res) => {
   console.log(req.body)
-  res.send(' POST /places or bing chilling')
+  if (!req.body.pic) {
+    //Default image if one is not provided
+    req.body.pic = '/images/nonsense.jpg'
+  }
+  if (!req.body.city) {
+    req.body.city = 'Somewhere in our big beautiful World'
+  }
+  if (!req.body.state) {
+    req.body.state = 'Somewhere else in our big beautiful World'
+  }
+  places.push(req.body)
+  res.redirect('/places')
 })
 
 router.get('/new', (req, res) => {
@@ -10,20 +22,6 @@ router.get('/new', (req, res) => {
 })
 
 router.get('/', function(req,res) {
-    let places = [{
-        name: 'Supreme Grand Master Food',
-        city: 'Huntington Beach',
-        state: 'CA',
-        cuisines: 'Vegan, Pan-Asian',
-        pic: '/images/vegan-nirvana.jpg'
-      }, {
-        name: 'Bad BBQ',
-        city: 'Artesia',
-        state: 'CA',
-        cuisines: 'Korean Barbeque, All You Can Eat (AYCE)',
-        pic: '/images/BAD-BBQ.jpg'
-      }]
-      
     res.render('places/index', { places })
 })
 
