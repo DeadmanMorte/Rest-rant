@@ -46,6 +46,12 @@ html, body {
 body {
     display: flex;
     flex-direction: column;
+    text-align: center;
+}
+main {
+    margin-right: 20px;
+    margin-left: 20px;
+    background-color: white;
 }
 .content {
     flex: 1 0 auto;
@@ -53,4 +59,29 @@ body {
 .footer {
     flex-shrink: 0;
     background-color: #38a9dd;
+}
+
+nav {
+    background-color: 38a9dd;
+    padding: 10px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+}
+
+nav li {
+    display: inline;
+    margin-right: 25px;
+}
+
+nav a {
+    color: white;
+    font-size: 1.5em;
+}
+
+nav a:hover {
+    color: pink;
+    text-decoration: none;
 }

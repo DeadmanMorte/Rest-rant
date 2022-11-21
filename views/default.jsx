@@ -10,6 +10,19 @@ function Def (html) {
             </head>
             <body>
                 <div className='content'>
+                <nav>
+                    <ul>
+                        <li>
+                        <a href="/">Home</a>
+                        </li>
+                        <li>
+                        <a href="/places">Places</a>
+                        </li>
+                        <li>
+                        <a href="/places/new">Add Place</a>
+                        </li>
+                    </ul>
+                </nav>
                     {html.children}
                 </div>
                 <footer className='footer'>STUFFS TO PUT LATER</footer>
