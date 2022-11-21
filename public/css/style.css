@@ -45,13 +45,12 @@ html, body {
 }
 body {
     display: flex;
-    flex-direction: column;
+    /* flex-direction: column; */
     text-align: center;
 }
 main {
     margin-right: 20px;
     margin-left: 20px;
-    background-color: white;
 }
 .content {
     flex: 1 0 auto;
@@ -62,7 +61,7 @@ main {
 }
 
 nav {
-    background-color: 38a9dd;
+    background-color: white;
     padding: 10px;
 }
 
