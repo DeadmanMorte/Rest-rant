@@ -11,6 +11,7 @@ function show (data) {
             <h2> Comments </h2>
             <img src={data.place.pic} alt={data.place.name}/>
             <p> Located in {data.place.city}, {data.place.state} </p>
+            <h3>{data.place.cuisines}</h3>
             <a href={`/places/${data.id}/edit`} className='btn btn-warning'>Edit</a>
             <form method="POST" action={`/places/${data.id}?_method=DELETE`}>
                 <button type="submit" className='btn btn-danger'>
