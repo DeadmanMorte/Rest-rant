@@ -36,7 +36,9 @@ function index (data) {
           <main>
               <div className='row'>
                 <h1>THEES EES PUHLUHAESEEz</h1>
+                <container>
                 {placesFormatted}
+                </container>
               </div>
           </main>
       </Def>
