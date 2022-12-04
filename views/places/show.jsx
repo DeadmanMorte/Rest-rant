@@ -41,8 +41,8 @@ function show (data) {
             <input type = 'text' className='form-control' id='author' name='author' required />
           </div>
           <div className='form-group'>
-              <label htmlFor='star-rating'>Star Rating</label>
-              <input className='form-control' type = 'number' id='star-rating' step={0.5} name='star-rating'  required />
+              <label htmlFor='stars'>Star Rating</label>
+              <input className='form-control' type = 'number' id='stars' step={0.5} name='stars'  required />
           </div>
           <div className='form-group'>
               <label htmlFor='content'>Content</label>
