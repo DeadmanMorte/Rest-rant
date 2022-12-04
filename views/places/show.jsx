@@ -5,12 +5,10 @@ function show (data) {
     return (
       <Def>
         <main>
-          <div className="row">
             <div className="col-sm-6">
             <img src={data.place.pic} alt={data.place.name} />
           <h3> Located in {data.place.city}, {data.place.state} </h3>
             </div>
-          </div>
       <div className="col-sm-6">
         <h2> Rating </h2>
         <h2> Comments </h2>

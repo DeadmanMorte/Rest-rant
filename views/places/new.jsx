@@ -9,7 +9,7 @@ function new_form () {
             <form method='POST' action='/places'>
             <div className='form-group'>
                     <label htmlFor='founded'>Founded Year</label>
-                    <input className='founded' id='founded' name='founded' />
+                    <input type= 'number' className='founded' id='founded' name='founded' defaultValue={new Date().getFullYear()} />                
                 </div>
                 <div className='form-group'>
                     <label htmlFor='name'>Place Name</label>
